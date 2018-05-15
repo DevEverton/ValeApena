@@ -13,6 +13,7 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var salaryLabel: UILabel!
     @IBOutlet weak var weeklyWorkHoursLabel: UILabel!
     @IBOutlet weak var moneyPerHourLabel: UILabel!
+    @IBOutlet weak var switchOut: UISwitch!
     
     var salary = Double()
     var workWeek = Double()
@@ -23,11 +24,35 @@ class SettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setDefaultValues()
-        salaryLabel.text = "RS\(defaults.double(forKey: "salary"))"
-        weeklyWorkHoursLabel.text = "\(Int(defaults.double(forKey: "workWeek")))"
-        moneyPerHourLabel.text = "R$9,09"
+        
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        hourValue = calculateHourValue()
+        salaryLabel.text = "R$ \(defaults.double(forKey: "salary"))"
+        weeklyWorkHoursLabel.text = "\(Int(defaults.double(forKey: "weekWorkHours")))"
+        moneyPerHourLabel.text = "R$ \(hourValue)"
+        setSwitchState()
+    }
+    
+
+    
+    
+    func setSwitchState() {
+        if defaults.bool(forKey: "isDay") == true {
+            isDay = true
+            switchOut.isOn = true
+        } else {
+            isDay = false
+            switchOut.isOn = false
+        }
+    }
+    
+    func calculateHourValue() -> Double {
+        let hourValue = (defaults.double(forKey: "salary")/(defaults.double(forKey: "weekWorkHours")*5).rounded(toPlaces: 2)).rounded(toPlaces: 2)
+        defaults.set(hourValue, forKey: "hourValue")
+        return defaults.double(forKey: "hourValue")
     }
     
     @IBAction func `switch`(_ sender: UISwitch) {
@@ -41,10 +66,6 @@ class SettingsTableViewController: UITableViewController {
  
     }
     
-    func setDefaultValues() {
-        let appDefaults: [String:Any] = ["isDay" : false, "salary" : 1000.0, "workWeek": 40.0]
-        defaults.register(defaults: appDefaults)
-    }
     
 
 }

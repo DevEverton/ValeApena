@@ -99,8 +99,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor da sua hora trabalhada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnP-hh-zJc">
-                                                    <rect key="frame" x="16" y="11" width="219" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor da hora trabalhada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnP-hh-zJc">
+                                                    <rect key="frame" x="16" y="11" width="188" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -179,6 +179,7 @@
                     <connections>
                         <outlet property="moneyPerHourLabel" destination="1s4-7T-kyg" id="oNO-t1-YGD"/>
                         <outlet property="salaryLabel" destination="VVZ-ZB-ZBV" id="IXm-Uj-5bc"/>
+                        <outlet property="switchOut" destination="cBs-3N-3ex" id="un9-Of-KJb"/>
                         <outlet property="weeklyWorkHoursLabel" destination="CC9-ge-76P" id="idw-tj-QVb"/>
                     </connections>
                 </tableViewController>
