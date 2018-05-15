@@ -15,8 +15,8 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var daysOrHoursLabel: UILabel!
     
-    var resultInDays = 10.0
-    var resultInHours = 10.0
+    var resultInDays = Double()
+    var resultInHours = Double()
     var isDays: Bool = false
     var timer = Timer()
     var counter = 0.0
@@ -77,7 +77,6 @@ class CalculateViewController: UIViewController {
     @IBAction func calculateButtonTapped(_ sender: Any) {
         
         priceTextField.resignFirstResponder()
-
         UIView.animate(withDuration: 1.0) {
             self.resultView.alpha = 1.0
         }
