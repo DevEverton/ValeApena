@@ -12,6 +12,8 @@
 		50C073FC20AA55FD006A59F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C073FB20AA55FD006A59F1 /* Assets.xcassets */; };
 		50C073FF20AA55FD006A59F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C073FD20AA55FD006A59F1 /* LaunchScreen.storyboard */; };
 		50C0740720AA6BB2006A59F1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */; };
+		50C0740920AA6FC5006A59F1 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740820AA6FC5006A59F1 /* EditViewController.swift */; };
+		50C0740B20AA744E006A59F1 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740A20AA744E006A59F1 /* CalculateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		50C073FE20AA55FD006A59F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C0740020AA55FD006A59F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		50C0740820AA6FC5006A59F1 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		50C0740A20AA744E006A59F1 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				50C073FD20AA55FD006A59F1 /* LaunchScreen.storyboard */,
 				50C0740020AA55FD006A59F1 /* Info.plist */,
 				50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */,
+				50C0740820AA6FC5006A59F1 /* EditViewController.swift */,
+				50C0740A20AA744E006A59F1 /* CalculateViewController.swift */,
 			);
 			path = "Vale_a_pena?";
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C0740720AA6BB2006A59F1 /* SettingsTableViewController.swift in Sources */,
+				50C0740B20AA744E006A59F1 /* CalculateViewController.swift in Sources */,
 				50C073F520AA55FC006A59F1 /* AppDelegate.swift in Sources */,
+				50C0740920AA6FC5006A59F1 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
