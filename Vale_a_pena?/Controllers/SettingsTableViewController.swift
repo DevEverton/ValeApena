@@ -14,13 +14,37 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var weeklyWorkHoursLabel: UILabel!
     @IBOutlet weak var moneyPerHourLabel: UILabel!
     
+    var salary = Double()
+    var workWeek = Double()
+    var hourValue = Double()
+    var isDay = Bool()
+    let defaults = UserDefaults.standard
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        salaryLabel.text = "RS2000,00"
-        weeklyWorkHoursLabel.text = "44"
+        setDefaultValues()
+        salaryLabel.text = "RS\(defaults.double(forKey: "salary"))"
+        weeklyWorkHoursLabel.text = "\(Int(defaults.double(forKey: "workWeek")))"
         moneyPerHourLabel.text = "R$9,09"
 
     }
+    
+    @IBAction func `switch`(_ sender: UISwitch) {
+        if sender.isOn {
+            isDay = true
+            defaults.set(true, forKey: "isDay")
+        }else {
+            isDay = false
+            defaults.set(false, forKey: "isDay")
+        }
+ 
+    }
+    
+    func setDefaultValues() {
+        let appDefaults: [String:Any] = ["isDay" : false, "salary" : 1000.0, "workWeek": 40.0]
+        defaults.register(defaults: appDefaults)
+    }
+    
 
 }

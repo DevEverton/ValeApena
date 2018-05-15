@@ -13,6 +13,9 @@ class EditViewController: UIViewController {
     @IBOutlet weak var salaryTextField: UITextField!
     @IBOutlet weak var weeklyWorkHoursTextField: UITextField!
     
+    let defaults = UserDefaults.standard
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,10 @@ class EditViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+    }
+    
+    func settingUserDefaults() {
+        
     }
     
 

@@ -37,13 +37,21 @@ class CalculateViewController: UIViewController {
         
     }
     
+    func resultHours(price: Double, hourValue: Double) -> Double {
+        return (price/hourValue).rounded(toPlaces: 2)
+        
+    }
+    
+    func resultDays(price: Double, salary: Double) -> Double {
+        return ((25*price)/salary).rounded(toPlaces: 2)
+    }
+    
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(CalculateViewController.updateTimer)), userInfo: nil, repeats: true)
         
     }
     
     @objc func updateTimer(){
-        counter += 0.1
         if isDays {
             daysOrHoursLabel.text = "dias"
             if counter < resultInDays {
@@ -52,6 +60,7 @@ class CalculateViewController: UIViewController {
                 counter = 0
                 timer.invalidate()
             }
+            counter += 0.1
         }else {
             daysOrHoursLabel.text = "horas"
             if counter < resultInHours {
@@ -60,6 +69,7 @@ class CalculateViewController: UIViewController {
                 counter = 0
                 timer.invalidate()
             }
+            counter += 0.1
         }
         
     }
