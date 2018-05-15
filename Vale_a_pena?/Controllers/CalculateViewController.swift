@@ -15,9 +15,11 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var daysOrHoursLabel: UILabel!
     
+    let defaults = UserDefaults.standard
+    
     var resultInDays = Double()
     var resultInHours = Double()
-    var isDays: Bool = false
+    var isDays = Bool()
     var timer = Timer()
     var counter = 0.0
     
@@ -37,6 +39,14 @@ class CalculateViewController: UIViewController {
         
     }
     
+    func getPrice() -> Double {
+        guard let priceString = priceTextField.text else {return 0.0}
+        let newPriceString = priceString.replacingOccurrences(of: ",", with: ".")
+        guard let price = Double(newPriceString) else {return 0.0}
+        return price.rounded(toPlaces: 2)
+
+    }
+    
     func resultHours(price: Double, hourValue: Double) -> Double {
         return (price/hourValue).rounded(toPlaces: 2)
         
@@ -53,7 +63,7 @@ class CalculateViewController: UIViewController {
     
     @objc func updateTimer(){
         if isDays {
-            daysOrHoursLabel.text = "dias"
+            daysOrHoursLabel.text = "Dias"
             if counter < resultInDays {
                 hoursLabel.text = "\(counter.rounded(toPlaces: 2))"
             }else if counter == resultInDays {
@@ -62,7 +72,7 @@ class CalculateViewController: UIViewController {
             }
             counter += 0.1
         }else {
-            daysOrHoursLabel.text = "horas"
+            daysOrHoursLabel.text = "Horas"
             if counter < resultInHours {
                 hoursLabel.text = "\(counter.rounded(toPlaces: 2))"
             }else if counter == resultInDays {
@@ -75,6 +85,9 @@ class CalculateViewController: UIViewController {
     }
 
     @IBAction func calculateButtonTapped(_ sender: Any) {
+        resultInDays = resultDays(price: getPrice(), salary: defaults.double(forKey: "salary"))
+        resultInHours = resultHours(price: getPrice(), hourValue: defaults.double(forKey: "hourValue"))
+        isDays = defaults.bool(forKey: "isDay")
         
         priceTextField.resignFirstResponder()
         UIView.animate(withDuration: 1.0) {
