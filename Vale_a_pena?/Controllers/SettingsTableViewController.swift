@@ -36,6 +36,9 @@ class SettingsTableViewController: UITableViewController {
         setSwitchState()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     
     

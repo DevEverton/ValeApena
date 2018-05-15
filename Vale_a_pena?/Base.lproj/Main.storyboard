@@ -127,7 +127,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yYo-4p-avb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="yYo-4p-avb">
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yYo-4p-avb" id="aEP-DD-hGG">
@@ -328,7 +328,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtA-O2-toc">
                                                 <rect key="frame" x="0.0" y="0.0" width="65.5" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbq-zu-UiZ">
@@ -358,8 +358,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWO-eX-orx">
                                 <rect key="frame" x="10" y="334" width="355" height="130"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você terá que trabalhar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-4g-i2X">
-                                        <rect key="frame" x="38" y="8" width="279" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você terá que trabalhar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-4g-i2X">
+                                        <rect key="frame" x="41.5" y="8" width="272" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -404,7 +404,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eWO-eX-orx" firstAttribute="leading" secondItem="o4x-rR-O2x" secondAttribute="leading" constant="10" id="5G8-TM-5Ar"/>
                             <constraint firstItem="eWO-eX-orx" firstAttribute="top" secondItem="IBl-nw-Bu8" secondAttribute="bottom" constant="30" id="FKf-LP-NQy"/>
@@ -455,7 +455,7 @@
         <scene sceneID="InT-fO-pXp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eJa-xY-16c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Configurações" id="yfx-gV-3Mf"/>
+                    <tabBarItem key="tabBarItem" title="Configurações" image="settings_icon" id="yfx-gV-3Mf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jg1-3c-Vsq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -479,7 +479,7 @@
         <scene sceneID="yrh-Mz-eEb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uyu-8T-GJX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calcular" id="efW-0V-Oue"/>
+                    <tabBarItem key="tabBarItem" title="Calcular" image="calculator_icon" id="efW-0V-Oue"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="523-bB-rFn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -499,4 +499,8 @@
             <point key="canvasLocation" x="1334.4000000000001" y="148.42578710644679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calculator_icon" width="22" height="28"/>
+        <image name="settings_icon" width="28" height="28"/>
+    </resources>
 </document>

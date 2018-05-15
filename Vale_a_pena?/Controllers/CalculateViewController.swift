@@ -33,10 +33,13 @@ class CalculateViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         resultView.alpha = 0.0
         priceTextField.text = ""
-        
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func getPrice() -> Double {
