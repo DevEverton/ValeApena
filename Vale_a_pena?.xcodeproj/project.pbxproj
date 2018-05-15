@@ -14,6 +14,7 @@
 		50C0740720AA6BB2006A59F1 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */; };
 		50C0740920AA6FC5006A59F1 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740820AA6FC5006A59F1 /* EditViewController.swift */; };
 		50C0740B20AA744E006A59F1 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740A20AA744E006A59F1 /* CalculateViewController.swift */; };
+		50C0740D20AB1229006A59F1 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740C20AB1229006A59F1 /* MaterialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		50C0740820AA6FC5006A59F1 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		50C0740A20AA744E006A59F1 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		50C0740C20AB1229006A59F1 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		50C073F320AA55FC006A59F1 /* Vale_a_pena? */ = {
 			isa = PBXGroup;
 			children = (
+				50C0741020AB1C21006A59F1 /* Models */,
+				50C0740F20AB1C18006A59F1 /* Views */,
+				50C0740E20AB1C0C006A59F1 /* Controllers */,
 				50C073F420AA55FC006A59F1 /* AppDelegate.swift */,
 				50C073F820AA55FD006A59F1 /* Main.storyboard */,
 				50C073FB20AA55FD006A59F1 /* Assets.xcassets */,
 				50C073FD20AA55FD006A59F1 /* LaunchScreen.storyboard */,
 				50C0740020AA55FD006A59F1 /* Info.plist */,
+			);
+			path = "Vale_a_pena?";
+			sourceTree = "<group>";
+		};
+		50C0740E20AB1C0C006A59F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */,
 				50C0740820AA6FC5006A59F1 /* EditViewController.swift */,
 				50C0740A20AA744E006A59F1 /* CalculateViewController.swift */,
 			);
-			path = "Vale_a_pena?";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50C0740F20AB1C18006A59F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50C0740C20AB1229006A59F1 /* MaterialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50C0741020AB1C21006A59F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 			files = (
 				50C0740720AA6BB2006A59F1 /* SettingsTableViewController.swift in Sources */,
 				50C0740B20AA744E006A59F1 /* CalculateViewController.swift in Sources */,
+				50C0740D20AB1229006A59F1 /* MaterialView.swift in Sources */,
 				50C073F520AA55FC006A59F1 /* AppDelegate.swift in Sources */,
 				50C0740920AA6FC5006A59F1 /* EditViewController.swift in Sources */,
 			);
