@@ -15,6 +15,7 @@
 		50C0740920AA6FC5006A59F1 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740820AA6FC5006A59F1 /* EditViewController.swift */; };
 		50C0740B20AA744E006A59F1 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740A20AA744E006A59F1 /* CalculateViewController.swift */; };
 		50C0740D20AB1229006A59F1 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0740C20AB1229006A59F1 /* MaterialView.swift */; };
+		50C1BCF520AC709E000FFBD8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C1BCF420AC709E000FFBD8 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		50C0740820AA6FC5006A59F1 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		50C0740A20AA744E006A59F1 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		50C0740C20AB1229006A59F1 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		50C1BCF420AC709E000FFBD8 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		50C0741020AB1C21006A59F1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				50C1BCF420AC709E000FFBD8 /* Helper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				50C0740D20AB1229006A59F1 /* MaterialView.swift in Sources */,
 				50C073F520AA55FC006A59F1 /* AppDelegate.swift in Sources */,
 				50C0740920AA6FC5006A59F1 /* EditViewController.swift in Sources */,
+				50C1BCF520AC709E000FFBD8 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

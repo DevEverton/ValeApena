@@ -24,8 +24,6 @@ class SettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +32,10 @@ class SettingsTableViewController: UITableViewController {
         weeklyWorkHoursLabel.text = "\(Int(defaults.double(forKey: "weekWorkHours")))"
         moneyPerHourLabel.text = "R$ \(hourValue)"
         setSwitchState()
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
