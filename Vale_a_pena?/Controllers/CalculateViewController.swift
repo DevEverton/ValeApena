@@ -33,6 +33,10 @@ class CalculateViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+//    override func viewDidAppear(_ animated: Bool) {
+//        priceTextField.becomeFirstResponder()
+//    }
+    
     override func viewWillAppear(_ animated: Bool) {
         resultView.alpha = 0.0
         priceTextField.text = ""
@@ -46,6 +50,10 @@ class CalculateViewController: UIViewController {
         guard let priceString = priceTextField.text else {return 0.0}
         let newPriceString = priceString.replacingOccurrences(of: ",", with: ".")
         guard let price = Double(newPriceString) else {return 0.0}
+        guard price < 10000000000 else {
+            createAlert(withTitle: "ERRO", message: "Valor muito alto. Insira valor menor.", actionTitle: "OK")
+            return 0.0
+        }
         return price.rounded(toPlaces: 2)
 
     }
@@ -60,7 +68,7 @@ class CalculateViewController: UIViewController {
     }
     
     func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: (#selector(CalculateViewController.updateTimer)), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: (#selector(CalculateViewController.updateTimer)), userInfo: nil, repeats: true)
         
     }
     
@@ -68,7 +76,7 @@ class CalculateViewController: UIViewController {
         if isDays {
             daysOrHoursLabel.text = "Dias"
             if counter < resultInDays {
-                hoursLabel.text = "\(counter.rounded(toPlaces: 2))"
+                hoursLabel.text = "\(counter.rounded(toPlaces: 2))".replacingOccurrences(of: ".", with: ",")
             }else if counter == resultInDays {
                 counter = 0
                 timer.invalidate()
@@ -77,7 +85,7 @@ class CalculateViewController: UIViewController {
         }else {
             daysOrHoursLabel.text = "Horas"
             if counter < resultInHours {
-                hoursLabel.text = "\(counter.rounded(toPlaces: 2))"
+                hoursLabel.text = "\(counter.rounded(toPlaces: 2))".replacingOccurrences(of: ".", with: ",")
             }else if counter == resultInDays {
                 counter = 0
                 timer.invalidate()

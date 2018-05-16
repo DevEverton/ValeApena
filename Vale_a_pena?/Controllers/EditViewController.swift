@@ -8,23 +8,32 @@
 
 import UIKit
 
+
 class EditViewController: UIViewController {
     
     @IBOutlet weak var salaryTextField: UITextField!
     @IBOutlet weak var weeklyWorkHoursTextField: UITextField!
     
     let defaults = UserDefaults.standard
-
-    
+    var rowTapped = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if rowTapped == 0 {
+            salaryTextField.becomeFirstResponder()
+        }else if rowTapped == 1 {
+            weeklyWorkHoursTextField.becomeFirstResponder()
+        }
+  
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        salaryTextField.text = "\(defaults.double(forKey: "salary"))"
-        weeklyWorkHoursTextField.text = "\(defaults.double(forKey: "weekWorkHours"))"
+        salaryTextField.text = "\(defaults.double(forKey: "salary"))".replacingOccurrences(of: ".", with: ",")
+        weeklyWorkHoursTextField.text = "\(Int(defaults.double(forKey: "weekWorkHours")))"
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -38,11 +47,23 @@ class EditViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let salaryString = salaryTextField.text else {return}
         guard let weekWorkHoursString = weeklyWorkHoursTextField.text else {return}
+        
+        guard salaryString != "" else {
+            createAlert(withTitle: "ERRO", message: "Campo vazio. Preencha todos os campos antes de salvar.", actionTitle: "OK")
+            return
+        }
+        
+        guard weekWorkHoursString != "" else {
+            createAlert(withTitle: "ERRO", message: "Campo vazio. Preencha todos os campos antes de salvar.", actionTitle: "OK")
+            return
+        }
+        
         let newSalaryString = salaryString.replacingOccurrences(of: ",", with: ".")
+        
         guard let salary = Double(newSalaryString)?.rounded(toPlaces: 2), let weekWorkHours = Double(weekWorkHoursString)?.rounded(toPlaces: 2)  else {return}
         
-        guard salary < 999999.99 else {
-            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira um valor abaixo de 999999,99.", actionTitle: "OK")
+        guard salary < 10000000 else {
+            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira um valor abaixo de 10 milhões.", actionTitle: "OK")
             return
         }
         guard weekWorkHours < 168.0 else {
