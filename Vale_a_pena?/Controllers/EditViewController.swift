@@ -66,8 +66,8 @@ class EditViewController: UIViewController {
             createAlert(withTitle: "ERRO", message: "Valor inválido. Insira um salário abaixo de 10 milhões.", actionTitle: "OK")
             return
         }
-        guard weekWorkHours < 168.0 else {
-            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira uma carga horária abaixo de 168.", actionTitle: "OK")
+        guard weekWorkHours <= 44.0 else {
+            createAlert(withTitle: "ERRO", message: "De acordo com o  inciso XIII do Art. 7º da Constituição Federal a duração do trabalho máxima é de: 8 horas diárias e 44 horas semanais. Insira um valor igual ou menor que 44.", actionTitle: "OK")
             return
         }
         

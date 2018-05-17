@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         if defaults.object(forKey: "weekWorkHours") == nil {
-            defaults.set(40.0, forKey: "weekWorkHours")
+            defaults.set(44.0, forKey: "weekWorkHours")
         }
         
         GADMobileAds.configure(withApplicationID: "ca-app-pub-4828696079960529~9669229477")

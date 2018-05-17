@@ -106,9 +106,13 @@ class SettingsTableViewController: UITableViewController, GADBannerViewDelegate 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! EditViewController
-        guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
-        destination.rowTapped = selectedRow
+        
+        if segue.identifier == "editS" || segue.identifier == "editW" {
+            let destination = segue.destination as! EditViewController
+            guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
+            destination.rowTapped = selectedRow
+        }
+
     }
     
     //MARK: Banner view methods
