@@ -84,8 +84,8 @@
 		50C0740E20AB1C0C006A59F1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */,
 				50C0740820AA6FC5006A59F1 /* EditViewController.swift */,
+				50C0740620AA6BB2006A59F1 /* SettingsTableViewController.swift */,
 				50C0740A20AA744E006A59F1 /* CalculateViewController.swift */,
 			);
 			path = Controllers;

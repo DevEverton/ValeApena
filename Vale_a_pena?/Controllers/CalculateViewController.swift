@@ -33,7 +33,7 @@ class CalculateViewController: UIViewController, GADBannerViewDelegate {
         
         resultView.alpha = 0.0
         bannerView = GADBannerView(adSize: kGADAdSizeLargeBanner)
-        bannerView.adUnitID = "ca-app-pub-4828696079960529/3873977319"
+        bannerView.adUnitID = "ca-app-pub-4828696079960529/8664119628"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         bannerView.delegate = self
@@ -153,6 +153,10 @@ class CalculateViewController: UIViewController, GADBannerViewDelegate {
         UIView.animate(withDuration: 1, animations: {
             bannerView.alpha = 1
         })
+    }
+    
+    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+        print("THE ERROR IS: \(error)")
     }
 
     

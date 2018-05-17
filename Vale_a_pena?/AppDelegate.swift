@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.set(44.0, forKey: "weekWorkHours")
         }
         
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-4828696079960529~9669229477")
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-4828696079960529~1168772983")
 
         
         return true

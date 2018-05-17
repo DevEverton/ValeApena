@@ -335,10 +335,10 @@
             </objects>
             <point key="canvasLocation" x="-151.19999999999999" y="1808.5457271364319"/>
         </scene>
-        <!--Editar-->
+        <!--Edit View Controller-->
         <scene sceneID="YDd-0S-bHG">
             <objects>
-                <viewController title="Editar" id="hc3-Nz-BtM" customClass="EditViewController" customModule="Vale_a_pena_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hc3-Nz-BtM" customClass="EditViewController" customModule="Vale_a_pena_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yos-uw-wlB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
