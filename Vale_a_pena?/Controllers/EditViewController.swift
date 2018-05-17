@@ -63,11 +63,11 @@ class EditViewController: UIViewController {
         guard let salary = Double(newSalaryString)?.rounded(toPlaces: 2), let weekWorkHours = Double(weekWorkHoursString)?.rounded(toPlaces: 2)  else {return}
         
         guard salary < 10000000 else {
-            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira um valor abaixo de 10 milhões.", actionTitle: "OK")
+            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira um salário abaixo de 10 milhões.", actionTitle: "OK")
             return
         }
         guard weekWorkHours < 168.0 else {
-            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira um valor abaixo de 168.", actionTitle: "OK")
+            createAlert(withTitle: "ERRO", message: "Valor inválido. Insira uma carga horária abaixo de 168.", actionTitle: "OK")
             return
         }
         

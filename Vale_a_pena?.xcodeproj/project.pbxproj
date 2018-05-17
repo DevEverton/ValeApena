@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4780A265D8DB42AFC3B3EF09 /* Pods_Vale_a_pena_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F6C6A02EFCF3A538283425 /* Pods_Vale_a_pena_.framework */; };
 		50C073F520AA55FC006A59F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C073F420AA55FC006A59F1 /* AppDelegate.swift */; };
 		50C073FA20AA55FD006A59F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C073F820AA55FD006A59F1 /* Main.storyboard */; };
 		50C073FC20AA55FD006A59F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C073FB20AA55FD006A59F1 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E4497F01B8D82C6337250FA /* Pods-Vale_a_pena?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vale_a_pena?.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?.debug.xcconfig"; sourceTree = "<group>"; };
+		277A2F481A0D55EE46CD0AA5 /* Pods-Vale_a_pena?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vale_a_pena?.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?.release.xcconfig"; sourceTree = "<group>"; };
 		50C073F120AA55FC006A59F1 /* Vale_a_pena?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vale_a_pena?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C073F420AA55FC006A59F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C073F920AA55FD006A59F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		50C0740A20AA744E006A59F1 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		50C0740C20AB1229006A59F1 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		50C1BCF420AC709E000FFBD8 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		80F6C6A02EFCF3A538283425 /* Pods_Vale_a_pena_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vale_a_pena_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4780A265D8DB42AFC3B3EF09 /* Pods_Vale_a_pena_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				50C073F320AA55FC006A59F1 /* Vale_a_pena? */,
 				50C073F220AA55FC006A59F1 /* Products */,
+				CA682B39025F03A4BD0B17EE /* Pods */,
+				A370CB537AA5070FF6CDF874 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +107,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A370CB537AA5070FF6CDF874 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80F6C6A02EFCF3A538283425 /* Pods_Vale_a_pena_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA682B39025F03A4BD0B17EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E4497F01B8D82C6337250FA /* Pods-Vale_a_pena?.debug.xcconfig */,
+				277A2F481A0D55EE46CD0AA5 /* Pods-Vale_a_pena?.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50C0740320AA55FD006A59F1 /* Build configuration list for PBXNativeTarget "Vale_a_pena?" */;
 			buildPhases = (
+				860945AC32E062A5F11AB3A4 /* [CP] Check Pods Manifest.lock */,
 				50C073ED20AA55FC006A59F1 /* Sources */,
 				50C073EE20AA55FC006A59F1 /* Frameworks */,
 				50C073EF20AA55FC006A59F1 /* Resources */,
+				BFA8BE14AC73E23731891086 /* [CP] Embed Pods Frameworks */,
+				96A0F961FBEA356A0E67F659 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,6 +193,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		860945AC32E062A5F11AB3A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vale_a_pena?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A0F961FBEA356A0E67F659 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA8BE14AC73E23731891086 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50C073ED20AA55FC006A59F1 /* Sources */ = {
@@ -312,6 +390,7 @@
 		};
 		50C0740420AA55FD006A59F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E4497F01B8D82C6337250FA /* Pods-Vale_a_pena?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +407,7 @@
 		};
 		50C0740520AA55FD006A59F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277A2F481A0D55EE46CD0AA5 /* Pods-Vale_a_pena?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

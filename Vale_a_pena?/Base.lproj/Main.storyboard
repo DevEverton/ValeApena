@@ -17,10 +17,10 @@
             <objects>
                 <tableViewController id="4c9-Ao-ROT" customClass="SettingsTableViewController" customModule="Vale_a_pena_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Waq-a5-dZB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="WRt-em-Iy2">
+                        <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="WRt-em-Iy2">
                             <rect key="frame" x="0.0" y="220" width="375" height="424"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,6 +54,7 @@
                                                 <constraint firstItem="NqU-0v-zVg" firstAttribute="leading" secondItem="eEo-Pr-BML" secondAttribute="leadingMargin" constant="40" id="E3a-vq-aNh"/>
                                                 <constraint firstItem="VVZ-ZB-ZBV" firstAttribute="trailing" secondItem="eEo-Pr-BML" secondAttribute="trailingMargin" id="Xks-R8-1hd"/>
                                                 <constraint firstItem="VVZ-ZB-ZBV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eEo-Pr-BML" secondAttribute="leadingMargin" id="gvF-Li-HLe"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NqU-0v-zVg" secondAttribute="trailingMargin" id="sB5-5Y-FTd"/>
                                                 <constraint firstItem="VVZ-ZB-ZBV" firstAttribute="top" secondItem="eEo-Pr-BML" secondAttribute="topMargin" constant="1" id="wPv-6U-reg"/>
                                                 <constraint firstItem="VVZ-ZB-ZBV" firstAttribute="bottom" secondItem="eEo-Pr-BML" secondAttribute="bottomMargin" id="wly-0F-jR5"/>
                                             </constraints>
@@ -90,6 +91,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="CC9-ge-76P" secondAttribute="bottom" constant="1" id="s9w-Qo-TZI"/>
                                                 <constraint firstItem="CC9-ge-76P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sgn-vR-7Iw" secondAttribute="leadingMargin" id="u5m-EK-aMb"/>
                                                 <constraint firstItem="be2-c3-shV" firstAttribute="top" secondItem="sgn-vR-7Iw" secondAttribute="topMargin" id="vHJ-Su-peI"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="be2-c3-shV" secondAttribute="trailingMargin" id="zvZ-cG-hgn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -119,6 +121,7 @@
                                             <constraints>
                                                 <constraint firstItem="1s4-7T-kyg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AHQ-uB-jRm" secondAttribute="leadingMargin" id="9n0-Os-efP"/>
                                                 <constraint firstItem="dnP-hh-zJc" firstAttribute="top" secondItem="AHQ-uB-jRm" secondAttribute="topMargin" id="GMb-TF-t4z"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dnP-hh-zJc" secondAttribute="trailingMargin" id="ZuV-UQ-K0K"/>
                                                 <constraint firstItem="1s4-7T-kyg" firstAttribute="trailing" secondItem="AHQ-uB-jRm" secondAttribute="trailingMargin" id="c3m-uw-2AZ"/>
                                                 <constraint firstItem="dnP-hh-zJc" firstAttribute="leading" secondItem="AHQ-uB-jRm" secondAttribute="leadingMargin" constant="40" id="fYH-0B-grs"/>
                                                 <constraint firstItem="1s4-7T-kyg" firstAttribute="bottom" secondItem="AHQ-uB-jRm" secondAttribute="bottomMargin" id="nXP-ac-9Ro"/>
@@ -154,6 +157,7 @@
                                             <constraints>
                                                 <constraint firstItem="VSG-HJ-hYk" firstAttribute="top" secondItem="aEP-DD-hGG" secondAttribute="topMargin" id="2jI-Gx-6AK"/>
                                                 <constraint firstItem="cBs-3N-3ex" firstAttribute="top" secondItem="aEP-DD-hGG" secondAttribute="top" constant="6" id="3LW-L5-YjC"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VSG-HJ-hYk" secondAttribute="trailingMargin" id="7TW-aC-Hhz"/>
                                                 <constraint firstItem="VSG-HJ-hYk" firstAttribute="leading" secondItem="aEP-DD-hGG" secondAttribute="leadingMargin" constant="40" id="FzI-fE-agB"/>
                                                 <constraint firstAttribute="bottom" secondItem="cBs-3N-3ex" secondAttribute="bottom" constant="6.5" id="Mc3-DV-5G8"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="VSG-HJ-hYk" secondAttribute="bottom" constant="1" id="gYD-7j-dvX"/>
@@ -161,11 +165,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6SL-yW-Pk8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6SL-yW-Pk8">
                                         <rect key="frame" x="0.0" y="176" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6SL-yW-Pk8" id="7Fl-dZ-s9h">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-9N-QRu">
@@ -178,6 +182,7 @@
                                             <constraints>
                                                 <constraint firstItem="gnO-9N-QRu" firstAttribute="top" secondItem="7Fl-dZ-s9h" secondAttribute="topMargin" id="EIZ-KL-cHf"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="gnO-9N-QRu" secondAttribute="bottom" constant="1" id="Q6v-oa-vBV"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gnO-9N-QRu" secondAttribute="trailingMargin" id="f0L-E4-Fz4"/>
                                                 <constraint firstItem="gnO-9N-QRu" firstAttribute="leading" secondItem="7Fl-dZ-s9h" secondAttribute="leadingMargin" constant="40" id="rfZ-F6-31Z"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -209,11 +214,11 @@
             <objects>
                 <viewController id="hc3-Nz-BtM" customClass="EditViewController" customModule="Vale_a_pena_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yos-uw-wlB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFk-R4-EAI">
-                                <rect key="frame" x="10" y="94" width="355" height="130"/>
+                                <rect key="frame" x="10" y="30" width="355" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="feV-oa-xIo">
                                         <rect key="frame" x="8" y="20" width="339" height="30"/>
@@ -271,7 +276,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JW-ks-thu">
-                                <rect key="frame" x="16" y="264" width="343" height="50"/>
+                                <rect key="frame" x="16" y="200" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.29803921568627451" green="0.85098039215686272" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="nGo-dg-8xz"/>
@@ -313,11 +318,11 @@
             <objects>
                 <viewController id="2dh-1N-OFQ" customClass="CalculateViewController" customModule="Vale_a_pena_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kip-tg-NZm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-nw-Bu8">
-                                <rect key="frame" x="10" y="254" width="355" height="50"/>
+                                <rect key="frame" x="10" y="190" width="355" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9kM-Fc-X6R"/>
@@ -334,7 +339,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvB-Oh-gh9">
-                                <rect key="frame" x="10" y="94" width="355" height="130"/>
+                                <rect key="frame" x="10" y="30" width="355" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço do produto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiB-hd-OfV">
                                         <rect key="frame" x="53" y="8" width="249" height="36"/>
@@ -376,7 +381,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWO-eX-orx">
-                                <rect key="frame" x="10" y="334" width="355" height="130"/>
+                                <rect key="frame" x="10" y="270" width="355" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você terá que trabalhar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-4g-i2X">
                                         <rect key="frame" x="41.5" y="8" width="272" height="30"/>
@@ -455,12 +460,12 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fh2-gJ-Ia3" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qeQ-AC-h5E">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="qeQ-AC-h5E">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Uyu-8T-GJX" kind="relationship" relationship="viewControllers" id="z91-l1-fub"/>
@@ -477,7 +482,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eJa-xY-16c" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ajustes" image="settings_icon" id="yfx-gV-3Mf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jg1-3c-Vsq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jg1-3c-Vsq">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -502,7 +507,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uyu-8T-GJX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calcular" image="calculator_icon" id="efW-0V-Oue"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="523-bB-rFn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="523-bB-rFn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class CalculateViewController: UIViewController {
+class CalculateViewController: UIViewController, GADBannerViewDelegate {
 
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var hoursLabel: UILabel!
@@ -16,6 +17,8 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var daysOrHoursLabel: UILabel!
     
     let defaults = UserDefaults.standard
+    var bannerView: GADBannerView!
+
     
     var resultInDays = Double()
     var resultInHours = Double()
@@ -23,12 +26,22 @@ class CalculateViewController: UIViewController {
     var timer = Timer()
     var counter = 0.0
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         resultView.alpha = 0.0
+        bannerView = GADBannerView(adSize: kGADAdSizeLargeBanner)
+        bannerView.adUnitID = "ca-app-pub-4828696079960529/3873977319"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
 
+        
     }
     
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -108,6 +121,40 @@ class CalculateViewController: UIViewController {
         runTimer()
         
     }
+    
+    //MARK: Banner view methods
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
+    
+    
+    
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        addBannerViewToView(bannerView)
+        bannerView.alpha = 0
+        UIView.animate(withDuration: 1, animations: {
+            bannerView.alpha = 1
+        })
+    }
+
     
 
 }

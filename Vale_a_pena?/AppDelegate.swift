@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.set(40.0, forKey: "weekWorkHours")
         }
         
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-4828696079960529~9669229477")
+
         
         return true
     }
