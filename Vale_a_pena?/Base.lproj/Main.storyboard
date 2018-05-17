@@ -16,15 +16,10 @@
         <scene sceneID="TjK-BL-4xp">
             <objects>
                 <tableViewController id="4c9-Ao-ROT" customClass="SettingsTableViewController" customModule="Vale_a_pena_" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Waq-a5-dZB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Waq-a5-dZB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="WRt-em-Iy2">
-                            <rect key="frame" x="0.0" y="220" width="375" height="424"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
                         <sections>
                             <tableViewSection id="Gyb-aQ-yYP">
                                 <cells>
@@ -210,7 +205,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STZ-ez-uSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-151" y="1066"/>
+            <point key="canvasLocation" x="-151.19999999999999" y="1065.5172413793105"/>
         </scene>
         <!--Sobre-->
         <scene sceneID="70f-6L-W3f">
@@ -419,7 +414,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1JW-ks-thu" firstAttribute="top" secondItem="qFk-R4-EAI" secondAttribute="bottom" constant="40" id="1uA-ob-h3a"/>
                             <constraint firstItem="qFk-R4-EAI" firstAttribute="top" secondItem="wq7-pB-bYj" secondAttribute="top" constant="30" id="CJW-fE-dN9"/>

@@ -27,6 +27,7 @@ class SettingsTableViewController: UITableViewController, GADBannerViewDelegate 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         
         bannerView = GADBannerView(adSize: kGADAdSizeMediumRectangle)
         bannerView.adUnitID = "ca-app-pub-4828696079960529/8664119628"
