@@ -55,10 +55,6 @@ class CalculateViewController: UIViewController, GADBannerViewDelegate {
         priceTextField.text = ""
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     func getPrice() -> Double {
         guard let priceString = priceTextField.text else {return 0.0}
         let newPriceString = priceString.replacingOccurrences(of: ",", with: ".")

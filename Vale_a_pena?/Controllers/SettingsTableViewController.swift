@@ -65,9 +65,6 @@ class SettingsTableViewController: UITableViewController, GADBannerViewDelegate 
         }
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
  
     func setSwitchState() {
         if defaults.bool(forKey: "isDay") == true {
