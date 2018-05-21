@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4780A265D8DB42AFC3B3EF09 /* Pods_Vale_a_pena_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F6C6A02EFCF3A538283425 /* Pods_Vale_a_pena_.framework */; };
+		4780A265D8DB42AFC3B3EF09 /* Pods_ValeApena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F6C6A02EFCF3A538283425 /* Pods_ValeApena.framework */; };
 		50C073F520AA55FC006A59F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C073F420AA55FC006A59F1 /* AppDelegate.swift */; };
 		50C073FA20AA55FD006A59F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C073F820AA55FD006A59F1 /* Main.storyboard */; };
 		50C073FC20AA55FD006A59F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C073FB20AA55FD006A59F1 /* Assets.xcassets */; };
@@ -20,9 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E4497F01B8D82C6337250FA /* Pods-Vale_a_pena?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vale_a_pena?.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?.debug.xcconfig"; sourceTree = "<group>"; };
-		277A2F481A0D55EE46CD0AA5 /* Pods-Vale_a_pena?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vale_a_pena?.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?.release.xcconfig"; sourceTree = "<group>"; };
-		50C073F120AA55FC006A59F1 /* Vale_a_pena?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vale_a_pena?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4497F01B8D82C6337250FA /* Pods-ValeApena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValeApena.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ValeApena/Pods-ValeApena.debug.xcconfig"; sourceTree = "<group>"; };
+		277A2F481A0D55EE46CD0AA5 /* Pods-ValeApena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValeApena.release.xcconfig"; path = "Pods/Target Support Files/Pods-ValeApena/Pods-ValeApena.release.xcconfig"; sourceTree = "<group>"; };
+		50C073F120AA55FC006A59F1 /* ValeApena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValeApena.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C073F420AA55FC006A59F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C073F920AA55FD006A59F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50C073FB20AA55FD006A59F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		50C0740A20AA744E006A59F1 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		50C0740C20AB1229006A59F1 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		50C1BCF420AC709E000FFBD8 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		80F6C6A02EFCF3A538283425 /* Pods_Vale_a_pena_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vale_a_pena_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F6C6A02EFCF3A538283425 /* Pods_ValeApena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValeApena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4780A265D8DB42AFC3B3EF09 /* Pods_Vale_a_pena_.framework in Frameworks */,
+				4780A265D8DB42AFC3B3EF09 /* Pods_ValeApena.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +51,7 @@
 		50C073E820AA55FC006A59F1 = {
 			isa = PBXGroup;
 			children = (
-				50C073F320AA55FC006A59F1 /* ValeAPena */,
+				50C073F320AA55FC006A59F1 /* ValeApena */,
 				50C073F220AA55FC006A59F1 /* Products */,
 				CA682B39025F03A4BD0B17EE /* Pods */,
 				A370CB537AA5070FF6CDF874 /* Frameworks */,
@@ -61,12 +61,12 @@
 		50C073F220AA55FC006A59F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50C073F120AA55FC006A59F1 /* Vale_a_pena?.app */,
+				50C073F120AA55FC006A59F1 /* ValeApena.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50C073F320AA55FC006A59F1 /* ValeAPena */ = {
+		50C073F320AA55FC006A59F1 /* ValeApena */ = {
 			isa = PBXGroup;
 			children = (
 				50C0741020AB1C21006A59F1 /* Models */,
@@ -78,7 +78,7 @@
 				50C073FD20AA55FD006A59F1 /* LaunchScreen.storyboard */,
 				50C0740020AA55FD006A59F1 /* Info.plist */,
 			);
-			path = ValeAPena;
+			path = ValeApena;
 			sourceTree = "<group>";
 		};
 		50C0740E20AB1C0C006A59F1 /* Controllers */ = {
@@ -110,7 +110,7 @@
 		A370CB537AA5070FF6CDF874 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				80F6C6A02EFCF3A538283425 /* Pods_Vale_a_pena_.framework */,
+				80F6C6A02EFCF3A538283425 /* Pods_ValeApena.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,8 +118,8 @@
 		CA682B39025F03A4BD0B17EE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E4497F01B8D82C6337250FA /* Pods-Vale_a_pena?.debug.xcconfig */,
-				277A2F481A0D55EE46CD0AA5 /* Pods-Vale_a_pena?.release.xcconfig */,
+				0E4497F01B8D82C6337250FA /* Pods-ValeApena.debug.xcconfig */,
+				277A2F481A0D55EE46CD0AA5 /* Pods-ValeApena.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50C073F020AA55FC006A59F1 /* Vale_a_pena? */ = {
+		50C073F020AA55FC006A59F1 /* ValeApena */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50C0740320AA55FD006A59F1 /* Build configuration list for PBXNativeTarget "Vale_a_pena?" */;
+			buildConfigurationList = 50C0740320AA55FD006A59F1 /* Build configuration list for PBXNativeTarget "ValeApena" */;
 			buildPhases = (
 				860945AC32E062A5F11AB3A4 /* [CP] Check Pods Manifest.lock */,
 				50C073ED20AA55FC006A59F1 /* Sources */,
@@ -142,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = "Vale_a_pena?";
-			productName = "Vale_a_pena?";
-			productReference = 50C073F120AA55FC006A59F1 /* Vale_a_pena?.app */;
+			name = ValeApena;
+			productName = ValeApena;
+			productReference = 50C073F120AA55FC006A59F1 /* ValeApena.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 50C073EC20AA55FC006A59F1 /* Build configuration list for PBXProject "ValeAPena" */;
+			buildConfigurationList = 50C073EC20AA55FC006A59F1 /* Build configuration list for PBXProject "ValeApena" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50C073F020AA55FC006A59F1 /* Vale_a_pena? */,
+				50C073F020AA55FC006A59F1 /* ValeApena */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +206,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Vale_a_pena?-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ValeApena-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -225,7 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ValeApena/Pods-ValeApena-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFA8BE14AC73E23731891086 /* [CP] Embed Pods Frameworks */ = {
@@ -240,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vale_a_pena?/Pods-Vale_a_pena?-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ValeApena/Pods-ValeApena-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -390,15 +390,15 @@
 		};
 		50C0740420AA55FD006A59F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E4497F01B8D82C6337250FA /* Pods-Vale_a_pena?.debug.xcconfig */;
+			baseConfigurationReference = 0E4497F01B8D82C6337250FA /* Pods-ValeApena.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TK5Y26D53T;
-				INFOPLIST_FILE = ValeAPena/Info.plist;
+				INFOPLIST_FILE = ValeApena/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = EvertonCarneiro.ValeAPena;
+				PRODUCT_BUNDLE_IDENTIFIER = EvertonCarneiro.ValeApena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -407,15 +407,15 @@
 		};
 		50C0740520AA55FD006A59F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 277A2F481A0D55EE46CD0AA5 /* Pods-Vale_a_pena?.release.xcconfig */;
+			baseConfigurationReference = 277A2F481A0D55EE46CD0AA5 /* Pods-ValeApena.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TK5Y26D53T;
-				INFOPLIST_FILE = ValeAPena/Info.plist;
+				INFOPLIST_FILE = ValeApena/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = EvertonCarneiro.ValeAPena;
+				PRODUCT_BUNDLE_IDENTIFIER = EvertonCarneiro.ValeApena;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -425,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50C073EC20AA55FC006A59F1 /* Build configuration list for PBXProject "ValeAPena" */ = {
+		50C073EC20AA55FC006A59F1 /* Build configuration list for PBXProject "ValeApena" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C0740120AA55FD006A59F1 /* Debug */,
@@ -434,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50C0740320AA55FD006A59F1 /* Build configuration list for PBXNativeTarget "Vale_a_pena?" */ = {
+		50C0740320AA55FD006A59F1 /* Build configuration list for PBXNativeTarget "ValeApena" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C0740420AA55FD006A59F1 /* Debug */,
