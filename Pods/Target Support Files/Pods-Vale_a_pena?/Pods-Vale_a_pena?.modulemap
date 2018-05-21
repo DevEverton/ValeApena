@@ -1,0 +1,6 @@
+framework module Pods_Vale_a_pena_ {
+  umbrella header "Pods-Vale_a_pena?-umbrella.h"
+
+  export *
+  module * { export * }
+}
